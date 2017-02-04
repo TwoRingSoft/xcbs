@@ -1,3 +1,5 @@
+# Reading in the output of xcodebuild -list, print just the list of build configurations
+
 started_build_configs = false
 
 build_configs = Array.new
