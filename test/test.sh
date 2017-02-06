@@ -1,7 +1,7 @@
 #!/bin/sh
 
 XCDANGER_WORKING_CHANGES=`git status --porcelain | wc -l`
-if [[ ${XCDANGER_WORKING_CHANGES} != 0 ]]; then
+if [[ ${XCDANGER_WORKING_CHANGES} -ne 0 ]]; then
 	echo "You have uncommitted changes in your working directory. Stashing them until the tests complete."
 	git stash --all
 fi
@@ -34,7 +34,7 @@ if [[ $? == 1 ]]; then
 	echo "\tmv ${XCDANGER_TEST_OUTPUT} ${XCDANGER_BASELINE_OUTPUT}"
 	echo "and check in the changes to the baseline file."
 
-	if [[ ${XCDANGER_WORKING_CHANGES} != 0 ]]; then
+	if [[ ${XCDANGER_WORKING_CHANGES} -ne 0 ]]; then
 		echo
 		echo "You had uncommitted changes before running the tests, which are currently stashed. Don't forget about them!"
 	fi
@@ -56,7 +56,7 @@ XCDANGER_TEST_DIRECTORY_CLEAN_CMD="git checkout \"${XCDANGER_TEST_DIRECTORY}\""
 echo "${XCDANGER_TEST_DIRECTORY_CLEAN_CMD}"
 eval "${XCDANGER_TEST_DIRECTORY_CLEAN_CMD}"
 
-if [[ ${XCDANGER_WORKING_CHANGES} != 0 ]]; then
+if [[ ${XCDANGER_WORKING_CHANGES} -ne 0 ]]; then
 	echo
 	echo "Popping stashed changes present before running tests..."
 	git stash pop
