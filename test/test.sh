@@ -22,12 +22,13 @@ git diff > "${XCDANGER_TEST_OUTPUT}"
 # see if new output is different from baseline
 diff "${XCDANGER_TEST_OUTPUT}" "${XCDANGER_BASELINE_OUTPUT}" 
 if [[ $? == 1 ]]; then
-    echo "Test output differs from baseline output. If this is a deliberate change, run:"
-    echo 
-    echo "\tmv ${XCDANGER_TEST_OUTPUT} ${XCDANGER_BASELINE_OUTPUT}"
-    echo
-    echo "and check in the changes to the baseline file."
-    exit 1
+	echo
+	echo "Test output differs from baseline output. If this is a deliberate change, run:"
+	echo 
+	echo "\tmv ${XCDANGER_TEST_OUTPUT} ${XCDANGER_BASELINE_OUTPUT}"
+	echo
+	echo "and check in the changes to the baseline file."
+	exit 1
 fi
 
 echo "Test succeeded."
