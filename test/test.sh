@@ -19,12 +19,12 @@ rm "${XCDANGER_TEST_XCCONFIG}"
 mv "${XCDANGER_TEMP}" "${XCDANGER_TEST_XCCONFIG}"
 
 # generate the new settings lock files
-sh output-build-settings.sh "${XCDANGER_TEST_PROJECT}"
+sh scripts/output-build-settings.sh "${XCDANGER_TEST_PROJECT}"
 
 # compare new git diff with the checked in baseline
 XCDANGER_BASELINE_OUTPUT="${XCDANGER_TEST_DIRECTORY}/baseline.diff"
 XCDANGER_TEST_OUTPUT="${XCDANGER_TEST_DIRECTORY}/computed.diff"
-git diff test/Test\ Project/.xcdanger/ "${XCDANGER_TEST_XCCONFIG}" > "${XCDANGER_TEST_OUTPUT}"
+git diff "${XCDANGER_TEST_PROJECT_DIRECTORY}"/.xcdanger/ "${XCDANGER_TEST_XCCONFIG}" > "${XCDANGER_TEST_OUTPUT}"
 
 # see if new output is different from baseline
 diff "${XCDANGER_TEST_OUTPUT}" "${XCDANGER_BASELINE_OUTPUT}" 

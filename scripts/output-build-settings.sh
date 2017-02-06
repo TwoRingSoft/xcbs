@@ -8,7 +8,7 @@ OIFS="$IFS"
 IFS=$'\n'
 
 XCDANGER_SCHEMES=`find "${XCDANGER_PROJECT}"/xcshareddata -name "*.xcscheme"`
-XCDANGER_CONFIGURATIONS=`xcodebuild -project "${XCDANGER_PROJECT}" -list | ruby list-configurations.rb`
+XCDANGER_CONFIGURATIONS=`xcodebuild -project "${XCDANGER_PROJECT}" -list | ruby scripts/list-configurations.rb`
 
 XCDANGER_OUTPUT_PATH="${XCDANGER_PROJECT}/../.xcdanger/"
 mkdir -p "${XCDANGER_OUTPUT_PATH}"
@@ -57,7 +57,7 @@ for XCDANGER_CONFIGURATION in ${XCDANGER_CONFIGURATIONS[@]}; do
             > "${XCDANGER_OUTPUT_FILE}"
 
         # replace any user-specific paths with the variable name they were derived from
-        XCDANGER_UNEXPANDED_SETTINGS=`cat settings-to-unexpand`
+        XCDANGER_UNEXPANDED_SETTINGS=`cat lib/settings-to-unexpand`
         for XCDANGER_UNEXPANDED_SETTING in ${XCDANGER_UNEXPANDED_SETTINGS[@]}; do
             unexpandSetting "${XCDANGER_UNEXPANDED_SETTING}" "${XCDANGER_OUTPUT_FILE}"
         done
