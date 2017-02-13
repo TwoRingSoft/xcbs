@@ -10,6 +10,10 @@ Many ways exist to combine build settings in Xcode, whether through inheritance 
 
 `xcdanger` will output the full build setting environment for each scheme/configuration combination, and write each of those environments to a lock file. If you check these files into source control and run `xcdanger` regularly, you can see exactly how your build environment will change for seemingly innocuous–or even accidental–changes to your defined build settings.
 
+## What about user paths?
+
+Because many build settings contain paths that only make sense on the machine running the build, paths are replaced with the most granular build setting possible. This keeps the files in .`xcdanger/` from changing for each developer on your team. See [lib/settings-to-unexpand](lib/settings-to-unexpand) to see the build settings whose values are replaced everywhere as they are written to file. _Note: order matters in this list!_
+
 ## Installation
 
 ```
@@ -22,3 +26,29 @@ or
 ```
 brew install tworingsoft/xcdanger
 ```
+<<<<<<< Local Changes
+<<<<<<< Local Changes
+
+## Usage
+
+You can run `xcdanger </path/to/.../your.xcodeproj>` any time. The suggested approach is to embed it in a pre-commit hook, as can be seen in the example [pre-commit.sample](scripts/pre-commit.sample).
+
+## Contribution
+
+Please feel free to fork and modify `xcdanger`, pull requests are welcome! Pease read the test [README](test/README.md) to see how to validate your code.
+
+If you find a bug or would like to see a new feature, please open a new issue before writing code.
+
+Please follow [code of conduct]() in all interactions here.
+=======
+>>>>>>> External Changes
+=======
+
+## Contribution
+
+Please feel free to fork and modify `xcdanger`, pull requests are welcome! Pease read the test [README](test/README.md) to see how to validate your code.
+
+If you find a bug or would like to see a new feature, please open a new issue before writing code.
+
+Please follow [code of conduct]() in all interactions here.
+>>>>>>> External Changes
