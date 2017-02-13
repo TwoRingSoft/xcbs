@@ -14,10 +14,10 @@ if [[ -z "${XCDANGER_PROJECT}" ]]; then
 fi
 
 # if no xcode project file exists at $XCDANGER_PROJECT, stop
-if [[ false ]]; then
-	echo "${XCDANGER_PROJECT} is not a valid Xcode project. Make sure you have the correct path."
-	exit $XCDANGER_EXIT_INVALID_XCODEPROJ_PATH
-fi
+# if [[  ]]; then
+# 	echo "${XCDANGER_PROJECT} is not a valid Xcode project. Make sure you have the correct path."
+# 	exit $XCDANGER_EXIT_INVALID_XCODEPROJ_PATH
+# fi
 
 # swap file separator characters to keep files with spaces in paths from breaking to two items as `find` output
 OIFS="$IFS"
