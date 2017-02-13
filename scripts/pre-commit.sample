@@ -1,5 +1,5 @@
 #!/bin/sh
 
-set -e
+set -eu
 
 sh scripts/output-build-settings.sh ./test/Test\ Project/Test\ Project.xcodeproj
