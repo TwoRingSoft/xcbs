@@ -1,7 +1,5 @@
 #!/bin/sh
 
-#set -x
-
 # failure modes
 XCDANGER_EXIT_NO_PATH_PROVIDED=1
 XCDANGER_EXIT_INVALID_XCODEPROJ_PATH=2
