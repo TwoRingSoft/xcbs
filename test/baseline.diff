@@ -1,5 +1,5 @@
 diff --git a/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock
-index d2f4fda..1e10801 100644
+index 83a96d9..00ba81d 100644
 --- a/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -220,10 +220,10 @@ index d2f4fda..1e10801 100644
      LOCSYMROOT = 
      MACH_O_TYPE = mh_execute
 +    MACOSX_DEPLOYMENT_TARGET = 10.12
-     MAC_OS_X_PRODUCT_BUILD_VERSION = 15G1212
-     MAC_OS_X_VERSION_ACTUAL = 101106
-     MAC_OS_X_VERSION_MAJOR = 101100
-     MAC_OS_X_VERSION_MINOR = 1106
+     MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
+     MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
+     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+     MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
      METAL_LIBRARY_FILE_BASE = default
 -    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Debug-iphoneos/Test Project.app
 +    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Debug/Test Project.app/Contents/Resources
@@ -261,7 +261,7 @@ index d2f4fda..1e10801 100644
 -    PLATFORM_DISPLAY_NAME = iOS
 -    PLATFORM_NAME = iphoneos
 -    PLATFORM_PREFERRED_ARCH = arm64
--    PLATFORM_PRODUCT_BUILD_VERSION = 14C89
+-    PLATFORM_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    PLIST_FILE_OUTPUT_FORMAT = binary
 -    PLUGINS_FOLDER_PATH = Test Project.app/PlugIns
 +    PKGINFO_FILE_PATH = OBJROOT/Test Project.build/Debug/Test Project.build/PkgInfo
@@ -276,7 +276,7 @@ index d2f4fda..1e10801 100644
 +    PLATFORM_DISPLAY_NAME = macOS
 +    PLATFORM_NAME = macosx
 +    PLATFORM_PREFERRED_ARCH = x86_64
-+    PLATFORM_PRODUCT_BUILD_VERSION = 8C1002
++    XCODE_PRODUCT_BUILD_VERSION = XCODE_PRODUCT_BUILD_VERSION
 +    PLIST_FILE_OUTPUT_FORMAT = same-as-input
 +    PLUGINS_FOLDER_PATH = Test Project.app/Contents/PlugIns
      PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES
@@ -313,7 +313,7 @@ index d2f4fda..1e10801 100644
 -    SDK_DIR_iphoneos10_2 = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk
 -    SDK_NAME = iphoneos10.2
 -    SDK_NAMES = iphoneos10.2
--    SDK_PRODUCT_BUILD_VERSION = 14C89
+-    SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    SDK_VERSION = 10.2
 -    SDK_VERSION_ACTUAL = 100200
 -    SDK_VERSION_MAJOR = 100000
@@ -399,7 +399,7 @@ index d2f4fda..1e10801 100644
      VERSION_INFO_FILE = Test Project_vers.c
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
 @@ -386,8 +369,8 @@ Build settings for action build and target "Test Project":
-     XCODE_VERSION_ACTUAL = 0821
+     XCODE_VERSION_ACTUAL = XCODE_VERSION_ACTUAL
      XCODE_VERSION_MAJOR = 0800
      XCODE_VERSION_MINOR = 0820
 -    XPCSERVICES_FOLDER_PATH = Test Project.app/XPCServices
@@ -410,7 +410,7 @@ index d2f4fda..1e10801 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock
-index 501dc92..5fb77d5 100644
+index 6e2d623..0aede9c 100644
 --- a/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -631,10 +631,10 @@ index 501dc92..5fb77d5 100644
      LOCSYMROOT = 
      MACH_O_TYPE = mh_execute
 +    MACOSX_DEPLOYMENT_TARGET = 10.12
-     MAC_OS_X_PRODUCT_BUILD_VERSION = 15G1212
-     MAC_OS_X_VERSION_ACTUAL = 101106
-     MAC_OS_X_VERSION_MAJOR = 101100
-     MAC_OS_X_VERSION_MINOR = 1106
+     MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
+     MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
+     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+     MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
      METAL_LIBRARY_FILE_BASE = default
 -    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Other Configuration-iphoneos/Test Project.app
 +    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Other Configuration/Test Project.app/Contents/Resources
@@ -672,7 +672,7 @@ index 501dc92..5fb77d5 100644
 -    PLATFORM_DISPLAY_NAME = iOS
 -    PLATFORM_NAME = iphoneos
 -    PLATFORM_PREFERRED_ARCH = arm64
--    PLATFORM_PRODUCT_BUILD_VERSION = 14C89
+-    PLATFORM_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    PLIST_FILE_OUTPUT_FORMAT = binary
 -    PLUGINS_FOLDER_PATH = Test Project.app/PlugIns
 +    PKGINFO_FILE_PATH = OBJROOT/Test Project.build/Other Configuration/Test Project.build/PkgInfo
@@ -687,7 +687,7 @@ index 501dc92..5fb77d5 100644
 +    PLATFORM_DISPLAY_NAME = macOS
 +    PLATFORM_NAME = macosx
 +    PLATFORM_PREFERRED_ARCH = x86_64
-+    PLATFORM_PRODUCT_BUILD_VERSION = 8C1002
++    XCODE_PRODUCT_BUILD_VERSION = XCODE_PRODUCT_BUILD_VERSION
 +    PLIST_FILE_OUTPUT_FORMAT = same-as-input
 +    PLUGINS_FOLDER_PATH = Test Project.app/Contents/PlugIns
      PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES
@@ -724,7 +724,7 @@ index 501dc92..5fb77d5 100644
 -    SDK_DIR_iphoneos10_2 = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk
 -    SDK_NAME = iphoneos10.2
 -    SDK_NAMES = iphoneos10.2
--    SDK_PRODUCT_BUILD_VERSION = 14C89
+-    SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    SDK_VERSION = 10.2
 -    SDK_VERSION_ACTUAL = 100200
 -    SDK_VERSION_MAJOR = 100000
@@ -810,7 +810,7 @@ index 501dc92..5fb77d5 100644
      VERSION_INFO_FILE = Test Project_vers.c
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
 @@ -386,8 +369,8 @@ Build settings for action build and target "Test Project":
-     XCODE_VERSION_ACTUAL = 0821
+     XCODE_VERSION_ACTUAL = XCODE_VERSION_ACTUAL
      XCODE_VERSION_MAJOR = 0800
      XCODE_VERSION_MINOR = 0820
 -    XPCSERVICES_FOLDER_PATH = Test Project.app/XPCServices
@@ -821,7 +821,7 @@ index 501dc92..5fb77d5 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock
-index 9119b6d..21afda6 100644
+index 7178aed..80b6da4 100644
 --- a/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -1047,10 +1047,10 @@ index 9119b6d..21afda6 100644
      LOCSYMROOT = 
      MACH_O_TYPE = mh_execute
 +    MACOSX_DEPLOYMENT_TARGET = 10.12
-     MAC_OS_X_PRODUCT_BUILD_VERSION = 15G1212
-     MAC_OS_X_VERSION_ACTUAL = 101106
-     MAC_OS_X_VERSION_MAJOR = 101100
-     MAC_OS_X_VERSION_MINOR = 1106
+     MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
+     MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
+     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+     MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
      METAL_LIBRARY_FILE_BASE = default
 -    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Release-iphoneos/Test Project.app
 +    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Release/Test Project.app/Contents/Resources
@@ -1088,7 +1088,7 @@ index 9119b6d..21afda6 100644
 -    PLATFORM_DISPLAY_NAME = iOS
 -    PLATFORM_NAME = iphoneos
 -    PLATFORM_PREFERRED_ARCH = arm64
--    PLATFORM_PRODUCT_BUILD_VERSION = 14C89
+-    PLATFORM_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    PLIST_FILE_OUTPUT_FORMAT = binary
 -    PLUGINS_FOLDER_PATH = Test Project.app/PlugIns
 +    PKGINFO_FILE_PATH = OBJROOT/Test Project.build/Release/Test Project.build/PkgInfo
@@ -1103,7 +1103,7 @@ index 9119b6d..21afda6 100644
 +    PLATFORM_DISPLAY_NAME = macOS
 +    PLATFORM_NAME = macosx
 +    PLATFORM_PREFERRED_ARCH = x86_64
-+    PLATFORM_PRODUCT_BUILD_VERSION = 8C1002
++    XCODE_PRODUCT_BUILD_VERSION = XCODE_PRODUCT_BUILD_VERSION
 +    PLIST_FILE_OUTPUT_FORMAT = same-as-input
 +    PLUGINS_FOLDER_PATH = Test Project.app/Contents/PlugIns
      PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES
@@ -1140,7 +1140,7 @@ index 9119b6d..21afda6 100644
 -    SDK_DIR_iphoneos10_2 = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk
 -    SDK_NAME = iphoneos10.2
 -    SDK_NAMES = iphoneos10.2
--    SDK_PRODUCT_BUILD_VERSION = 14C89
+-    SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    SDK_VERSION = 10.2
 -    SDK_VERSION_ACTUAL = 100200
 -    SDK_VERSION_MAJOR = 100000
@@ -1226,7 +1226,7 @@ index 9119b6d..21afda6 100644
      VERSION_INFO_FILE = Test Project_vers.c
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
 @@ -385,8 +368,8 @@ Build settings for action build and target "Test Project":
-     XCODE_VERSION_ACTUAL = 0821
+     XCODE_VERSION_ACTUAL = XCODE_VERSION_ACTUAL
      XCODE_VERSION_MAJOR = 0800
      XCODE_VERSION_MINOR = 0820
 -    XPCSERVICES_FOLDER_PATH = Test Project.app/XPCServices
