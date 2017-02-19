@@ -26,8 +26,6 @@ or
 ```
 brew install tworingsoft/xcdanger
 ```
-<<<<<<< Local Changes
-<<<<<<< Local Changes
 
 ## Usage
 
@@ -39,16 +37,4 @@ Please feel free to fork and modify `xcdanger`, pull requests are welcome! Pease
 
 If you find a bug or would like to see a new feature, please open a new issue before writing code.
 
-Please follow [code of conduct]() in all interactions here.
-=======
->>>>>>> External Changes
-=======
-
-## Contribution
-
-Please feel free to fork and modify `xcdanger`, pull requests are welcome! Pease read the test [README](test/README.md) to see how to validate your code.
-
-If you find a bug or would like to see a new feature, please open a new issue before writing code.
-
-Please follow [code of conduct]() in all interactions here.
->>>>>>> External Changes
+Please be kind in all your interactions :)
