@@ -21,6 +21,13 @@ mv "${XCDANGER_TEMP}" "${XCDANGER_TEST_XCCONFIG}"
 # generate the new settings lock files
 sh scripts/output-build-settings.sh "${XCDANGER_TEST_PROJECT}"
 
+# we expect differences, and the exit code should be 3
+XCDANGER_EXIT_STATUS=$?
+if [[ $XCDANGER_EXIT_STATUS -ne 3 ]]; then
+	echo "Expected exit code of 3 but got ${XCDANGER_EXIT_STATUS}"
+	exit 1
+fi
+
 # compare new git diff with the checked in baseline
 XCDANGER_BASELINE_OUTPUT="${XCDANGER_TEST_DIRECTORY}/baseline.diff"
 XCDANGER_TEST_OUTPUT="${XCDANGER_TEST_DIRECTORY}/computed.diff"
@@ -28,7 +35,7 @@ git diff "${XCDANGER_TEST_PROJECT_DIRECTORY}"/.xcdanger/ "${XCDANGER_TEST_XCCONF
 
 # see if new output is different from baseline
 diff "${XCDANGER_TEST_OUTPUT}" "${XCDANGER_BASELINE_OUTPUT}" 
-if [[ $? == 1 ]]; then
+if [[ $? -eq 1 ]]; then
 	echo
 	echo "Test output differs from baseline output. If this is a deliberate change, run:"
 	echo "\tmv ${XCDANGER_TEST_OUTPUT} ${XCDANGER_BASELINE_OUTPUT}"
