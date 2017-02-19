@@ -1,5 +1,5 @@
 diff --git a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock
-index 01993b3..a03257e 100644
+index 20a3b2b..3fecbb5 100644
 --- a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -315,9 +315,7 @@ index 01993b3..a03257e 100644
 -    SDK_NAMES = iphoneos10.2
 -    SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    SDK_VERSION = 10.2
--    SDK_VERSION_ACTUAL = 100200
--    SDK_VERSION_MAJOR = 100000
--    SDK_VERSION_MINOR = 200
+-    SDK_VERSION_ACTUAL = SDK_VERSION_ACTUAL
 +    SCRIPTS_FOLDER_PATH = Test Project.app/Contents/Resources/Scripts
 +    SDKROOT = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
 +    SDK_DIR = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
@@ -326,8 +324,9 @@ index 01993b3..a03257e 100644
 +    SDK_NAMES = macosx10.12
 +    SDK_PRODUCT_BUILD_VERSION = 16C58
 +    SDK_VERSION = 10.12
-+    SDK_VERSION_ACTUAL = 101200
-+    SDK_VERSION_MAJOR = 101200
++    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+     SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+-    SDK_VERSION_MINOR = 200
 +    SDK_VERSION_MINOR = 1200
      SED = /usr/bin/sed
      SEPARATE_STRIP = NO
@@ -410,7 +409,7 @@ index 01993b3..a03257e 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock
-index db76214..3e49ecd 100644
+index 2fcda32..b7aa3e4 100644
 --- a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -726,9 +725,7 @@ index db76214..3e49ecd 100644
 -    SDK_NAMES = iphoneos10.2
 -    SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    SDK_VERSION = 10.2
--    SDK_VERSION_ACTUAL = 100200
--    SDK_VERSION_MAJOR = 100000
--    SDK_VERSION_MINOR = 200
+-    SDK_VERSION_ACTUAL = SDK_VERSION_ACTUAL
 +    SCRIPTS_FOLDER_PATH = Test Project.app/Contents/Resources/Scripts
 +    SDKROOT = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
 +    SDK_DIR = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
@@ -737,8 +734,9 @@ index db76214..3e49ecd 100644
 +    SDK_NAMES = macosx10.12
 +    SDK_PRODUCT_BUILD_VERSION = 16C58
 +    SDK_VERSION = 10.12
-+    SDK_VERSION_ACTUAL = 101200
-+    SDK_VERSION_MAJOR = 101200
++    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+     SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+-    SDK_VERSION_MINOR = 200
 +    SDK_VERSION_MINOR = 1200
      SED = /usr/bin/sed
      SEPARATE_STRIP = NO
@@ -821,7 +819,7 @@ index db76214..3e49ecd 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock
-index 804ae59..d51df6d 100644
+index b4b199f..b489eff 100644
 --- a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -1142,9 +1140,7 @@ index 804ae59..d51df6d 100644
 -    SDK_NAMES = iphoneos10.2
 -    SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    SDK_VERSION = 10.2
--    SDK_VERSION_ACTUAL = 100200
--    SDK_VERSION_MAJOR = 100000
--    SDK_VERSION_MINOR = 200
+-    SDK_VERSION_ACTUAL = SDK_VERSION_ACTUAL
 +    SCRIPTS_FOLDER_PATH = Test Project.app/Contents/Resources/Scripts
 +    SDKROOT = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
 +    SDK_DIR = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
@@ -1153,8 +1149,9 @@ index 804ae59..d51df6d 100644
 +    SDK_NAMES = macosx10.12
 +    SDK_PRODUCT_BUILD_VERSION = 16C58
 +    SDK_VERSION = 10.12
-+    SDK_VERSION_ACTUAL = 101200
-+    SDK_VERSION_MAJOR = 101200
++    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+     SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+-    SDK_VERSION_MINOR = 200
 +    SDK_VERSION_MINOR = 1200
      SED = /usr/bin/sed
      SEPARATE_STRIP = NO
