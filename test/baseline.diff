@@ -1,5 +1,5 @@
 diff --git a/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock
-index 7819cc5..59fe236 100644
+index d2f4fda..1e10801 100644
 --- a/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -244,7 +244,7 @@ index 7819cc5..59fe236 100644
      OS = MACOS
 @@ -249,27 +234,27 @@ Build settings for action build and target "Test Project":
      PASCAL_STRINGS = YES
-     PATH = DEVELOPER_DIR/usr/bin:/Users/VERSION_INFO_BUILDER/.rbenv/shims:/Users/VERSION_INFO_BUILDER/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:
+     PATH = PATH
      PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES = /usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks DEVELOPER_DIR/Headers DEVELOPER_DIR/SDKs DEVELOPER_DIR/Platforms
 -    PBDEVELOPMENTPLIST_PATH = Test Project.app/pbdevelopment.plist
 +    PBDEVELOPMENTPLIST_PATH = Test Project.app/Contents/pbdevelopment.plist
@@ -410,7 +410,7 @@ index 7819cc5..59fe236 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock
-index dc4a4e1..dbe408e 100644
+index 501dc92..5fb77d5 100644
 --- a/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -655,7 +655,7 @@ index dc4a4e1..dbe408e 100644
      OS = MACOS
 @@ -249,27 +234,27 @@ Build settings for action build and target "Test Project":
      PASCAL_STRINGS = YES
-     PATH = DEVELOPER_DIR/usr/bin:/Users/VERSION_INFO_BUILDER/.rbenv/shims:/Users/VERSION_INFO_BUILDER/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:
+     PATH = PATH
      PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES = /usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks DEVELOPER_DIR/Headers DEVELOPER_DIR/SDKs DEVELOPER_DIR/Platforms
 -    PBDEVELOPMENTPLIST_PATH = Test Project.app/pbdevelopment.plist
 +    PBDEVELOPMENTPLIST_PATH = Test Project.app/Contents/pbdevelopment.plist
@@ -821,7 +821,7 @@ index dc4a4e1..dbe408e 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock
-index bd2282c..e02b002 100644
+index 9119b6d..21afda6 100644
 --- a/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -1071,7 +1071,7 @@ index bd2282c..e02b002 100644
      OS = MACOS
 @@ -248,27 +233,27 @@ Build settings for action build and target "Test Project":
      PASCAL_STRINGS = YES
-     PATH = DEVELOPER_DIR/usr/bin:/Users/VERSION_INFO_BUILDER/.rbenv/shims:/Users/VERSION_INFO_BUILDER/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:
+     PATH = PATH
      PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES = /usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks DEVELOPER_DIR/Headers DEVELOPER_DIR/SDKs DEVELOPER_DIR/Platforms
 -    PBDEVELOPMENTPLIST_PATH = Test Project.app/pbdevelopment.plist
 +    PBDEVELOPMENTPLIST_PATH = Test Project.app/Contents/pbdevelopment.plist
