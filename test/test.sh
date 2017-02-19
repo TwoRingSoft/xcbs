@@ -50,7 +50,9 @@ if [[ $? -eq 1 ]]; then
 fi
 
 echo
-echo "Test succeeded!"
+echo "/-----------------\\"
+echo "| Test succeeded! |"
+echo "\-----------------/"
 echo
 
 echo "Cleaning up..."
@@ -58,6 +60,8 @@ echo "Cleaning up..."
 XCDANGER_TEST_OUTPUT_CLEAN_CMD="git clean -f \"${XCDANGER_TEST_OUTPUT}\""
 echo "${XCDANGER_TEST_OUTPUT_CLEAN_CMD}"
 eval "${XCDANGER_TEST_OUTPUT_CLEAN_CMD}"
+
+echo
 
 XCDANGER_TEST_DIRECTORY_CLEAN_CMD="git checkout \"${XCDANGER_TEST_DIRECTORY}\""
 echo "${XCDANGER_TEST_DIRECTORY_CLEAN_CMD}"
