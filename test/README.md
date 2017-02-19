@@ -6,12 +6,12 @@ For now there's a single test. Execute `test.sh` to run it.
 
 - `Test Project.xcodeproj` was created using Xcode's (8.2.1) default project template
 - `Test.xcconfig` was added to set `SDKROOT = iphoneos`, the same as the value set in Xcode's Build Settings GUI. The xcconfig was wired up for project-level settings and the `SDKROOT` setting was cleared for those settings in the GUI.
-- `output-build-settings.sh` was run to obtain the settings lock files for the project in its initial state, which are checked in to source control
+- `xcbs` was run to obtain the settings lock files for the project in its initial state, which are checked in to source control
 
 Running `test/test.sh`:
 
 - in `Test.xcconfig`, `SDKROOT` value is changed from `iphoneos` to `macosx10.12`
-- `output-build-settings.sh` is run again, producing different settings lock files
+- `xcbs` is run again, producing different settings lock files
 
 Baseline diff:
 

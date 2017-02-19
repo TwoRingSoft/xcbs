@@ -2,4 +2,4 @@
 
 set -eu
 
-sh scripts/output-build-settings.sh ./test/Test\ Project/Test\ Project.xcodeproj
+xcbs ./test/Test\ Project/Test\ Project.xcodeproj

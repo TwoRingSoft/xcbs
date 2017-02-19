@@ -16,7 +16,7 @@ Because many build settings contain paths that only make sense on the machine ru
 
 If you modify this list, then you need to do the following:
 
-- run output-build-settings.sh on the test xcodeproj, check in the lock files
+- run `xcbs` on the test xcodeproj, check in the lock files
 - run test/test.sh, overwrite the baseline diff with the computed diff, check in
 
 ## Installation

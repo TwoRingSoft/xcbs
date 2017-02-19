@@ -19,7 +19,7 @@ rm "${XCBS_TEST_XCCONFIG}"
 mv "${XCBS_TEMP}" "${XCBS_TEST_XCCONFIG}"
 
 # generate the new settings lock files
-sh scripts/output-build-settings.sh "${XCBS_TEST_PROJECT}"
+sh scripts/xcbs "${XCBS_TEST_PROJECT}"
 
 # compare new git diff with the checked in baseline
 XCBS_BASELINE_OUTPUT="${XCBS_TEST_DIRECTORY}/baseline.diff"
