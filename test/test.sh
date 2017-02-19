@@ -56,6 +56,7 @@ echo "\-----------------/"
 echo
 
 echo "Cleaning up..."
+echo
 
 XCDANGER_TEST_OUTPUT_CLEAN_CMD="git clean -f \"${XCDANGER_TEST_OUTPUT}\""
 echo "${XCDANGER_TEST_OUTPUT_CLEAN_CMD}"
