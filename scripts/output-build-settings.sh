@@ -85,7 +85,7 @@ for XCDANGER_CONFIGURATION in ${XCDANGER_CONFIGURATIONS[@]}; do
 		# if there's already a .lock file, see if any settings have changed; if so we'll return non-zero exit status at the end (-e checks if file exists)
 		if [[ -e "${XCDANGER_OUTPUT_FILE}" ]]; then
 			XCDANGER_DIFF_RESULT=`diff --brief ${XCDANGER_TEMP_OUTPUT_FILE} ${XCDANGER_OUTPUT_FILE} &2>&1 >> /dev/null`
-			if [[ $XCDANGER_DIFF_RESULT != 0 ]]; then
+			if [[ $XCDANGER_DIFF_RESULT -ne 0 ]]; then
 				XCDANGER_EXIT_CODE=$XCDANGER_EXIT_BUILD_SETTINGS_CHANGED
 			fi
 			
