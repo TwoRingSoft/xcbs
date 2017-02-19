@@ -21,13 +21,6 @@ mv "${XCBS_TEMP}" "${XCBS_TEST_XCCONFIG}"
 # generate the new settings lock files
 sh scripts/output-build-settings.sh "${XCBS_TEST_PROJECT}"
 
-# we expect differences, and the exit code should be 3
-XCBS_EXIT_STATUS=$?
-if [[ $XCBS_EXIT_STATUS -ne 3 ]]; then
-	echo "Expected exit code of 3 but got ${XCBS_EXIT_STATUS}"
-	exit 1
-fi
-
 # compare new git diff with the checked in baseline
 XCBS_BASELINE_OUTPUT="${XCBS_TEST_DIRECTORY}/baseline.diff"
 XCBS_TEST_OUTPUT="${XCBS_TEST_DIRECTORY}/computed.diff"
