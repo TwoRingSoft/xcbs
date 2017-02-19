@@ -14,6 +14,11 @@ Many ways exist to combine build settings in Xcode, whether through inheritance 
 
 Because many build settings contain paths that only make sense on the machine running the build, paths are replaced with the most granular build setting possible. This keeps the files in .`xcdanger/` from changing for each developer on your team. See [lib/settings-to-unexpand](lib/settings-to-unexpand) to see the build settings whose values are replaced everywhere as they are written to file. _Note: order matters in this list!_
 
+If you modify this list, then you need to do the following:
+
+- run output-build-settings.sh on the test xcodeproj, check in the lock files
+- run test/test.sh, overwrite the baseline diff with the computed diff, check in
+
 ## Installation
 
 ```
