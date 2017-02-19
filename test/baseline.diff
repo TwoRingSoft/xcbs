@@ -1,5 +1,5 @@
 diff --git a/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock
-index 83a96d9..00ba81d 100644
+index 01993b3..a03257e 100644
 --- a/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -400,8 +400,8 @@ index 83a96d9..00ba81d 100644
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
 @@ -386,8 +369,8 @@ Build settings for action build and target "Test Project":
      XCODE_VERSION_ACTUAL = XCODE_VERSION_ACTUAL
-     XCODE_VERSION_MAJOR = 0800
-     XCODE_VERSION_MINOR = 0820
+     XCODE_VERSION_MAJOR = XCODE_VERSION_MAJOR
+     XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
 -    XPCSERVICES_FOLDER_PATH = Test Project.app/XPCServices
 +    XPCSERVICES_FOLDER_PATH = Test Project.app/Contents/XPCServices
      YACC = yacc
@@ -410,7 +410,7 @@ index 83a96d9..00ba81d 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock
-index 6e2d623..0aede9c 100644
+index db76214..3e49ecd 100644
 --- a/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -811,8 +811,8 @@ index 6e2d623..0aede9c 100644
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
 @@ -386,8 +369,8 @@ Build settings for action build and target "Test Project":
      XCODE_VERSION_ACTUAL = XCODE_VERSION_ACTUAL
-     XCODE_VERSION_MAJOR = 0800
-     XCODE_VERSION_MINOR = 0820
+     XCODE_VERSION_MAJOR = XCODE_VERSION_MAJOR
+     XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
 -    XPCSERVICES_FOLDER_PATH = Test Project.app/XPCServices
 +    XPCSERVICES_FOLDER_PATH = Test Project.app/Contents/XPCServices
      YACC = yacc
@@ -821,7 +821,7 @@ index 6e2d623..0aede9c 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock
-index 7178aed..80b6da4 100644
+index 804ae59..d51df6d 100644
 --- a/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -1227,8 +1227,8 @@ index 7178aed..80b6da4 100644
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
 @@ -385,8 +368,8 @@ Build settings for action build and target "Test Project":
      XCODE_VERSION_ACTUAL = XCODE_VERSION_ACTUAL
-     XCODE_VERSION_MAJOR = 0800
-     XCODE_VERSION_MINOR = 0820
+     XCODE_VERSION_MAJOR = XCODE_VERSION_MAJOR
+     XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
 -    XPCSERVICES_FOLDER_PATH = Test Project.app/XPCServices
 +    XPCSERVICES_FOLDER_PATH = Test Project.app/Contents/XPCServices
      YACC = yacc
