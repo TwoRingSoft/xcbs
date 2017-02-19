@@ -15,7 +15,7 @@ Running `test/test.sh`:
 
 Baseline diff:
 
-- The resulting git diffs from running the two previous steps were written to `baseline.diff`, which includes the change to `Test.xcconfig` and the settings lock files in `Test Project/.xcdanger`. `baseline.diff` is checked into source control.
+- The resulting git diffs from running the two previous steps were written to `baseline.diff`, which includes the change to `Test.xcconfig` and the settings lock files in `Test Project/.xcbs`. `baseline.diff` is checked into source control.
 
 Test comparison:
 

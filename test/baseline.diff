@@ -1,7 +1,7 @@
-diff --git a/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock
+diff --git a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock
 index 01993b3..a03257e 100644
---- a/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock	
-+++ b/test/Test Project/.xcdanger/Debug/Test Project.build-settings.lock	
+--- a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
++++ b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
  Build settings for action build and target "Test Project":
      ACTION = build
@@ -409,10 +409,10 @@ index 01993b3..a03257e 100644
 +    arch = x86_64
      variant = normal
  
-diff --git a/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock
+diff --git a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock
 index db76214..3e49ecd 100644
---- a/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock	
-+++ b/test/Test Project/.xcdanger/Other Configuration/Test Project.build-settings.lock	
+--- a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
++++ b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
  Build settings for action build and target "Test Project":
      ACTION = build
@@ -820,10 +820,10 @@ index db76214..3e49ecd 100644
 +    arch = x86_64
      variant = normal
  
-diff --git a/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock b/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock
+diff --git a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock
 index 804ae59..d51df6d 100644
---- a/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock	
-+++ b/test/Test Project/.xcdanger/Release/Test Project.build-settings.lock	
+--- a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
++++ b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
  Build settings for action build and target "Test Project":
      ACTION = build
