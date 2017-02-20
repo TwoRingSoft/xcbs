@@ -1,5 +1,5 @@
 diff --git a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock
-index 20a3b2b..46fdb44 100644
+index de30ce7..46fdb44 100644
 --- a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -397,12 +397,8 @@ index 20a3b2b..46fdb44 100644
      VERSION_INFO_BUILDER = VERSION_INFO_BUILDER
      VERSION_INFO_FILE = Test Project_vers.c
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
-@@ -383,11 +366,11 @@ Build settings for action build and target "Test Project":
-     WRAP_ASSET_PACKS_IN_SEPARATE_DIRECTORIES = NO
-     XCODE_APP_SUPPORT_DIR = DEVELOPER_DIR/Library/Xcode
-     XCODE_PRODUCT_BUILD_VERSION = XCODE_PRODUCT_BUILD_VERSION
--    XCODE_VERSION_ACTUAL = XCODE_VERSION_ACTUAL
-+    XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
+@@ -386,8 +369,8 @@ Build settings for action build and target "Test Project":
+     XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
      XCODE_VERSION_MAJOR = XCODE_VERSION_MAJOR
      XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
 -    XPCSERVICES_FOLDER_PATH = Test Project.app/XPCServices
@@ -413,7 +409,7 @@ index 20a3b2b..46fdb44 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock
-index 2fcda32..fb9e673 100644
+index d208142..fb9e673 100644
 --- a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -811,12 +807,8 @@ index 2fcda32..fb9e673 100644
      VERSION_INFO_BUILDER = VERSION_INFO_BUILDER
      VERSION_INFO_FILE = Test Project_vers.c
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
-@@ -383,11 +366,11 @@ Build settings for action build and target "Test Project":
-     WRAP_ASSET_PACKS_IN_SEPARATE_DIRECTORIES = NO
-     XCODE_APP_SUPPORT_DIR = DEVELOPER_DIR/Library/Xcode
-     XCODE_PRODUCT_BUILD_VERSION = XCODE_PRODUCT_BUILD_VERSION
--    XCODE_VERSION_ACTUAL = XCODE_VERSION_ACTUAL
-+    XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
+@@ -386,8 +369,8 @@ Build settings for action build and target "Test Project":
+     XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
      XCODE_VERSION_MAJOR = XCODE_VERSION_MAJOR
      XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
 -    XPCSERVICES_FOLDER_PATH = Test Project.app/XPCServices
@@ -827,7 +819,7 @@ index 2fcda32..fb9e673 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock
-index b4b199f..4aec808 100644
+index b12bc44..4aec808 100644
 --- a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -1230,12 +1222,8 @@ index b4b199f..4aec808 100644
      VERSION_INFO_BUILDER = VERSION_INFO_BUILDER
      VERSION_INFO_FILE = Test Project_vers.c
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
-@@ -382,11 +365,11 @@ Build settings for action build and target "Test Project":
-     WRAP_ASSET_PACKS_IN_SEPARATE_DIRECTORIES = NO
-     XCODE_APP_SUPPORT_DIR = DEVELOPER_DIR/Library/Xcode
-     XCODE_PRODUCT_BUILD_VERSION = XCODE_PRODUCT_BUILD_VERSION
--    XCODE_VERSION_ACTUAL = XCODE_VERSION_ACTUAL
-+    XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
+@@ -385,8 +368,8 @@ Build settings for action build and target "Test Project":
+     XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
      XCODE_VERSION_MAJOR = XCODE_VERSION_MAJOR
      XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
 -    XPCSERVICES_FOLDER_PATH = Test Project.app/XPCServices
