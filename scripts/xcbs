@@ -79,9 +79,6 @@ for XCBS_CONFIGURATION in ${XCBS_CONFIGURATIONS[@]}; do
 		for XCBS_UNEXPANDED_SETTING in ${XCBS_UNEXPANDED_SETTINGS[@]}; do
 			unexpand_setting "${XCBS_UNEXPANDED_SETTING}" "${XCBS_TEMP_OUTPUT_FILE}"
 		done
-		
-		echo "Build settings:"
-		cat "${XCBS_TEMP_OUTPUT_FILE}"
 
 		# if there's already a .lock file, see if any settings have changed; if so we'll return non-zero exit status at the end (-e checks if file exists)
 		if [[ -e "${XCBS_OUTPUT_FILE}" ]]; then
