@@ -34,7 +34,7 @@ brew install tworingsoft/xcbs
 
 ## Usage
 
-You can run `xcbs </path/to/.../your.xcodeproj>` any time. The suggested approach is to embed it in a pre-commit hook, as can be seen in the example [pre-commit.sample](scripts/pre-commit.sample).
+You can run `xcbs </path/to/.../your.xcodeproj>` any time. You can even embed it in a pre-commit hook, as can be seen in the example [pre-commit.sample](scripts/pre-commit.sample). `xcbs` returns exit status 66 if changes were detected, which will abort commits that leave behind changes to lockfiles.
 
 ## Contribution
 
