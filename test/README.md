@@ -1,6 +1,6 @@
 # Testing
 
-For now there's a single test. Execute `test.sh` to run it.
+For now there's a single test. Execute `test.sh` to run it. It currently uses the Xcode 8.2 build chain.
 
 ## Details
 
