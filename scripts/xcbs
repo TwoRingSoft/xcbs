@@ -72,7 +72,7 @@ for XCBS_CONFIGURATION in ${XCBS_CONFIGURATIONS[@]}; do
 		XCBS_TEMP_OUTPUT_FILE="${XCBS_OUTPUT_FILE}.new"
 
 		# output the xcode build settings for the scheme/configuration
-		xcodebuild -project "${XCBS_PROJECT}" -scheme "${XCBS_SCHEME_NAME}" -configuration "${XCBS_CONFIGURATION}" -showBuildSettings > "${XCBS_TEMP_OUTPUT_FILE}"
+		xcrun xcodebuild -project "${XCBS_PROJECT}" -scheme "${XCBS_SCHEME_NAME}" -configuration "${XCBS_CONFIGURATION}" -showBuildSettings > "${XCBS_TEMP_OUTPUT_FILE}"
 
 		# replace any user-specific paths with the variable name they were derived from
 		XCBS_UNEXPANDED_SETTINGS=`cat lib/settings-to-unexpand`
