@@ -8,6 +8,16 @@ XCBS_EXIT_BUILD_SETTINGS_CHANGED=66
 # path to the .xcodeproj from the command line
 XCBS_PROJECT="${1}"
 
+if [[ $XCBS_PROJECT == "--help" ]]; then
+	echo
+	echo "Usage: xcbs </path/to/.../your.xcodeproj>"
+	echo
+fi
+
+if [[ $XCBS_PROJECT == "--version" ]]; then
+	echo "\txcbs version 1.0.0"
+fi
+
 # make sure we got a path to the .xcodeproj
 if [[ -z "${XCBS_PROJECT}" ]]; then
 	echo "You must provide a path to your .xcodeproj file as an argument to xcbs."
