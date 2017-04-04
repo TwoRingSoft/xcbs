@@ -1,5 +1,5 @@
 diff --git a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock
-index de30ce7..46fdb44 100644
+index de30ce7..750b695 100644
 --- a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -222,7 +222,8 @@ index de30ce7..46fdb44 100644
 +    MACOSX_DEPLOYMENT_TARGET = 10.12
      MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
      MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
-     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+-    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
++    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
      MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
      METAL_LIBRARY_FILE_BASE = default
 -    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Debug-iphoneos/Test Project.app
@@ -322,7 +323,7 @@ index de30ce7..46fdb44 100644
 +    SDK_DIR_macosx10_12 = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
 +    SDK_NAME = macosx10.12
 +    SDK_NAMES = macosx10.12
-+    SDK_PRODUCT_BUILD_VERSION = 16C58
++    SDK_PRODUCT_BUILD_VERSION = 16E185
 +    SDK_VERSION = 10.12
 +    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
      SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
@@ -409,7 +410,7 @@ index de30ce7..46fdb44 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock
-index d208142..fb9e673 100644
+index d208142..8adf882 100644
 --- a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -632,7 +633,8 @@ index d208142..fb9e673 100644
 +    MACOSX_DEPLOYMENT_TARGET = 10.12
      MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
      MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
-     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+-    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
++    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
      MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
      METAL_LIBRARY_FILE_BASE = default
 -    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Other Configuration-iphoneos/Test Project.app
@@ -732,7 +734,7 @@ index d208142..fb9e673 100644
 +    SDK_DIR_macosx10_12 = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
 +    SDK_NAME = macosx10.12
 +    SDK_NAMES = macosx10.12
-+    SDK_PRODUCT_BUILD_VERSION = 16C58
++    SDK_PRODUCT_BUILD_VERSION = 16E185
 +    SDK_VERSION = 10.12
 +    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
      SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
@@ -819,7 +821,7 @@ index d208142..fb9e673 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock
-index b12bc44..4aec808 100644
+index b12bc44..9fb1663 100644
 --- a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -1047,7 +1049,8 @@ index b12bc44..4aec808 100644
 +    MACOSX_DEPLOYMENT_TARGET = 10.12
      MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
      MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
-     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+-    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
++    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
      MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
      METAL_LIBRARY_FILE_BASE = default
 -    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Release-iphoneos/Test Project.app
@@ -1147,7 +1150,7 @@ index b12bc44..4aec808 100644
 +    SDK_DIR_macosx10_12 = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
 +    SDK_NAME = macosx10.12
 +    SDK_NAMES = macosx10.12
-+    SDK_PRODUCT_BUILD_VERSION = 16C58
++    SDK_PRODUCT_BUILD_VERSION = 16E185
 +    SDK_VERSION = 10.12
 +    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
      SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
