@@ -1,5 +1,5 @@
 diff --git a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock
-index de30ce7..750b695 100644
+index de30ce7..52067c7 100644
 --- a/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Debug/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -38,7 +38,25 @@ index de30ce7..750b695 100644
      CACHE_ROOT = CCHROOT
      CCHROOT = CCHROOT
      CHMOD = /bin/chmod
-@@ -52,50 +50,41 @@ Build settings for action build and target "Test Project":
+@@ -40,7 +38,9 @@ Build settings for action build and target "Test Project":
+     CLANG_CXX_LIBRARY = libc++
+     CLANG_ENABLE_MODULES = YES
+     CLANG_ENABLE_OBJC_ARC = YES
++    CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
+     CLANG_WARN_BOOL_CONVERSION = YES
++    CLANG_WARN_COMMA = YES
+     CLANG_WARN_CONSTANT_CONVERSION = YES
+     CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
+     CLANG_WARN_DOCUMENTATION_COMMENTS = YES
+@@ -48,39 +48,37 @@ Build settings for action build and target "Test Project":
+     CLANG_WARN_ENUM_CONVERSION = YES
+     CLANG_WARN_INFINITE_RECURSION = YES
+     CLANG_WARN_INT_CONVERSION = YES
++    CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES
++    CLANG_WARN_OBJC_LITERAL_CONVERSION = YES
+     CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
++    CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
++    CLANG_WARN_STRICT_PROTOTYPES = YES
      CLANG_WARN_SUSPICIOUS_MOVE = YES
      CLANG_WARN_UNREACHABLE_CODE = YES
      CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
@@ -54,6 +72,7 @@ index de30ce7..750b695 100644
 -    CODE_SIGN_IDENTITY = iPhone Developer
      COLOR_DIAGNOSTICS = NO
      COMBINE_HIDPI_IMAGES = NO
++    COMPILER_INDEX_STORE_ENABLE = Default
      COMPOSITE_SDK_DIRS = OBJROOT/CompositeSDKs
 -    COMPRESS_PNG_FILES = YES
 +    COMPRESS_PNG_FILES = NO
@@ -82,8 +101,7 @@ index de30ce7..750b695 100644
      DEBUGGING_SYMBOLS = YES
      DEBUG_INFORMATION_FORMAT = dwarf
      DEFAULT_COMPILER = com.apple.compilers.llvm.clang.1_0
--    DEFAULT_KEXT_INSTALL_PATH = /System/Library/Extensions
-+    DEFAULT_KEXT_INSTALL_PATH = /Library/Extensions
+@@ -88,14 +86,12 @@ Build settings for action build and target "Test Project":
      DEFINES_MODULE = NO
      DEPLOYMENT_LOCATION = NO
      DEPLOYMENT_POSTPROCESSING = NO
@@ -104,7 +122,7 @@ index de30ce7..750b695 100644
      DEVELOPER_APPLICATIONS_DIR = DEVELOPER_DIR/Applications
      DEVELOPER_BIN_DIR = DEVELOPER_DIR/usr/bin
      DEVELOPER_DIR = DEVELOPER_DIR
-@@ -106,37 +95,34 @@ Build settings for action build and target "Test Project":
+@@ -106,37 +102,34 @@ Build settings for action build and target "Test Project":
      DEVELOPER_TOOLS_DIR = DEVELOPER_DIR/Tools
      DEVELOPER_USR_DIR = DEVELOPER_DIR/usr
      DEVELOPMENT_LANGUAGE = English
@@ -153,7 +171,7 @@ index de30ce7..750b695 100644
      FRAMEWORK_FLAG_PREFIX = -framework
      FRAMEWORK_VERSION = A
      FULL_PRODUCT_NAME = Test Project.app
-@@ -149,7 +135,6 @@ Build settings for action build and target "Test Project":
+@@ -149,7 +142,6 @@ Build settings for action build and target "Test Project":
      GCC_PFE_FILE_C_DIALECTS = c objective-c c++ objective-c++
      GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 
      GCC_SYMBOLS_PRIVATE_EXTERN = NO
@@ -161,7 +179,7 @@ index de30ce7..750b695 100644
      GCC_TREAT_WARNINGS_AS_ERRORS = NO
      GCC_VERSION = com.apple.compilers.llvm.clang.1_0
      GCC_VERSION_IDENTIFIER = com_apple_compilers_llvm_clang_1_0
-@@ -176,10 +161,10 @@ Build settings for action build and target "Test Project":
+@@ -176,10 +168,10 @@ Build settings for action build and target "Test Project":
      ICONV = /usr/bin/iconv
      INFOPLIST_EXPAND_BUILD_SETTINGS = YES
      INFOPLIST_FILE = Test Project/Info.plist
@@ -175,7 +193,7 @@ index de30ce7..750b695 100644
      INLINE_PRIVATE_FRAMEWORKS = NO
      INSTALLHDRS_COPY_PHASE = NO
      INSTALLHDRS_SCRIPT_PHASE = NO
-@@ -189,13 +174,12 @@ Build settings for action build and target "Test Project":
+@@ -189,13 +181,12 @@ Build settings for action build and target "Test Project":
      INSTALL_OWNER = VERSION_INFO_BUILDER
      INSTALL_PATH = /Applications
      INSTALL_ROOT = /tmp/Test Project.dst
@@ -190,7 +208,7 @@ index de30ce7..750b695 100644
      JAVA_FRAMEWORK_RESOURCES_DIRS = Resources
      JAVA_JAR_FLAGS = cv
      JAVA_SOURCE_SUBDIR = .
-@@ -203,9 +187,9 @@ Build settings for action build and target "Test Project":
+@@ -203,9 +194,9 @@ Build settings for action build and target "Test Project":
      JAVA_ZIP_FLAGS = -urg
      JIKES_DEFAULT_FLAGS = +E +OLDCSO
      KEEP_PRIVATE_EXTERNS = NO
@@ -202,7 +220,7 @@ index de30ce7..750b695 100644
      LD_NO_PIE = NO
      LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES
      LD_RUNPATH_SEARCH_PATHS =  @executable_path/Frameworks
-@@ -215,10 +199,10 @@ Build settings for action build and target "Test Project":
+@@ -215,10 +206,10 @@ Build settings for action build and target "Test Project":
      LIBRARY_FLAG_PREFIX = -l
      LIBRARY_KEXT_INSTALL_PATH = /Library/Extensions
      LINKER_DISPLAYS_MANGLED_NAMES = NO
@@ -215,15 +233,13 @@ index de30ce7..750b695 100644
      LOCAL_ADMIN_APPS_DIR = /Applications/Utilities
      LOCAL_APPS_DIR = /Applications
      LOCAL_DEVELOPER_DIR = /Library/Developer
-@@ -226,21 +210,22 @@ Build settings for action build and target "Test Project":
-     LOCROOT = 
+@@ -227,20 +218,20 @@ Build settings for action build and target "Test Project":
      LOCSYMROOT = 
      MACH_O_TYPE = mh_execute
-+    MACOSX_DEPLOYMENT_TARGET = 10.12
      MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
-     MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
--    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
-+    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+-    MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
++    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
      MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
      METAL_LIBRARY_FILE_BASE = default
 -    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Debug-iphoneos/Test Project.app
@@ -243,7 +259,7 @@ index de30ce7..750b695 100644
      OBJROOT = OBJROOT
      ONLY_ACTIVE_ARCH = YES
      OS = MACOS
-@@ -249,27 +234,27 @@ Build settings for action build and target "Test Project":
+@@ -249,27 +240,27 @@ Build settings for action build and target "Test Project":
      PASCAL_STRINGS = YES
      PATH = PATH
      PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES = /usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks DEVELOPER_DIR/Headers DEVELOPER_DIR/SDKs DEVELOPER_DIR/Platforms
@@ -289,7 +305,7 @@ index de30ce7..750b695 100644
      PRODUCT_BUNDLE_IDENTIFIER = com.tworingsoft.Test-Project
      PRODUCT_MODULE_NAME = Test_Project
      PRODUCT_NAME = Test Project
-@@ -283,50 +268,48 @@ Build settings for action build and target "Test Project":
+@@ -283,50 +274,40 @@ Build settings for action build and target "Test Project":
      PROJECT_NAME = Test Project
      PROJECT_TEMP_DIR = OBJROOT/Test Project.build
      PROJECT_TEMP_ROOT = OBJROOT
@@ -317,18 +333,10 @@ index de30ce7..750b695 100644
 -    SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    SDK_VERSION = 10.2
 -    SDK_VERSION_ACTUAL = SDK_VERSION_ACTUAL
-+    SCRIPTS_FOLDER_PATH = Test Project.app/Contents/Resources/Scripts
-+    SDKROOT = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-+    SDK_DIR = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-+    SDK_DIR_macosx10_12 = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-+    SDK_NAME = macosx10.12
-+    SDK_NAMES = macosx10.12
-+    SDK_PRODUCT_BUILD_VERSION = 16E185
-+    SDK_VERSION = 10.12
-+    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
-     SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+-    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
 -    SDK_VERSION_MINOR = 200
-+    SDK_VERSION_MINOR = 1200
++    SCRIPTS_FOLDER_PATH = Test Project.app/Contents/Resources/Scripts
++    SDKROOT = SRCROOT/macosx10.12
      SED = /usr/bin/sed
      SEPARATE_STRIP = NO
      SEPARATE_SYMBOL_EDIT = NO
@@ -355,6 +363,7 @@ index de30ce7..750b695 100644
      STRIP_STYLE = all
 -    SUPPORTED_DEVICE_FAMILIES = 1,2
 -    SUPPORTED_PLATFORMS = iphonesimulator iphoneos
++    STRIP_SWIFT_SYMBOLS = YES
 +    SUPPORTED_PLATFORMS = macosx
      SUPPORTS_TEXT_BASED_API = NO
 -    SWIFT_PLATFORM_TARGET_PREFIX = ios
@@ -362,7 +371,7 @@ index de30ce7..750b695 100644
      SYMROOT = SYMROOT
      SYSTEM_ADMIN_APPS_DIR = /Applications/Utilities
      SYSTEM_APPS_DIR = /Applications
-@@ -352,17 +335,17 @@ Build settings for action build and target "Test Project":
+@@ -352,17 +333,17 @@ Build settings for action build and target "Test Project":
      TAPI_VERIFY_MODE = ErrorsOnly
      TARGETED_DEVICE_FAMILY = 1,2
      TARGETNAME = Test Project
@@ -386,7 +395,7 @@ index de30ce7..750b695 100644
      UNSTRIPPED_PRODUCT = NO
      USER = VERSION_INFO_BUILDER
      USER_APPS_DIR = USER_APPS_DIR
-@@ -371,9 +354,9 @@ Build settings for action build and target "Test Project":
+@@ -371,9 +352,9 @@ Build settings for action build and target "Test Project":
      USE_HEADERMAP = YES
      USE_HEADER_SYMLINKS = NO
      VALIDATE_PRODUCT = NO
@@ -398,7 +407,7 @@ index de30ce7..750b695 100644
      VERSION_INFO_BUILDER = VERSION_INFO_BUILDER
      VERSION_INFO_FILE = Test Project_vers.c
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
-@@ -386,8 +369,8 @@ Build settings for action build and target "Test Project":
+@@ -386,8 +367,8 @@ Build settings for action build and target "Test Project":
      XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
      XCODE_VERSION_MAJOR = XCODE_VERSION_MAJOR
      XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
@@ -410,7 +419,7 @@ index de30ce7..750b695 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock
-index d208142..8adf882 100644
+index d208142..7cb5db5 100644
 --- a/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Other Configuration/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -449,7 +458,25 @@ index d208142..8adf882 100644
      CACHE_ROOT = CCHROOT
      CCHROOT = CCHROOT
      CHMOD = /bin/chmod
-@@ -52,50 +50,41 @@ Build settings for action build and target "Test Project":
+@@ -40,7 +38,9 @@ Build settings for action build and target "Test Project":
+     CLANG_CXX_LIBRARY = libc++
+     CLANG_ENABLE_MODULES = YES
+     CLANG_ENABLE_OBJC_ARC = YES
++    CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
+     CLANG_WARN_BOOL_CONVERSION = YES
++    CLANG_WARN_COMMA = YES
+     CLANG_WARN_CONSTANT_CONVERSION = YES
+     CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
+     CLANG_WARN_DOCUMENTATION_COMMENTS = YES
+@@ -48,39 +48,37 @@ Build settings for action build and target "Test Project":
+     CLANG_WARN_ENUM_CONVERSION = YES
+     CLANG_WARN_INFINITE_RECURSION = YES
+     CLANG_WARN_INT_CONVERSION = YES
++    CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES
++    CLANG_WARN_OBJC_LITERAL_CONVERSION = YES
+     CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
++    CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
++    CLANG_WARN_STRICT_PROTOTYPES = YES
      CLANG_WARN_SUSPICIOUS_MOVE = YES
      CLANG_WARN_UNREACHABLE_CODE = YES
      CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
@@ -465,6 +492,7 @@ index d208142..8adf882 100644
 -    CODE_SIGN_IDENTITY = iPhone Developer
      COLOR_DIAGNOSTICS = NO
      COMBINE_HIDPI_IMAGES = NO
++    COMPILER_INDEX_STORE_ENABLE = Default
      COMPOSITE_SDK_DIRS = OBJROOT/CompositeSDKs
 -    COMPRESS_PNG_FILES = YES
 +    COMPRESS_PNG_FILES = NO
@@ -493,8 +521,7 @@ index d208142..8adf882 100644
      DEBUGGING_SYMBOLS = YES
      DEBUG_INFORMATION_FORMAT = dwarf
      DEFAULT_COMPILER = com.apple.compilers.llvm.clang.1_0
--    DEFAULT_KEXT_INSTALL_PATH = /System/Library/Extensions
-+    DEFAULT_KEXT_INSTALL_PATH = /Library/Extensions
+@@ -88,14 +86,12 @@ Build settings for action build and target "Test Project":
      DEFINES_MODULE = NO
      DEPLOYMENT_LOCATION = NO
      DEPLOYMENT_POSTPROCESSING = NO
@@ -515,7 +542,7 @@ index d208142..8adf882 100644
      DEVELOPER_APPLICATIONS_DIR = DEVELOPER_DIR/Applications
      DEVELOPER_BIN_DIR = DEVELOPER_DIR/usr/bin
      DEVELOPER_DIR = DEVELOPER_DIR
-@@ -106,37 +95,34 @@ Build settings for action build and target "Test Project":
+@@ -106,37 +102,34 @@ Build settings for action build and target "Test Project":
      DEVELOPER_TOOLS_DIR = DEVELOPER_DIR/Tools
      DEVELOPER_USR_DIR = DEVELOPER_DIR/usr
      DEVELOPMENT_LANGUAGE = English
@@ -564,7 +591,7 @@ index d208142..8adf882 100644
      FRAMEWORK_FLAG_PREFIX = -framework
      FRAMEWORK_VERSION = A
      FULL_PRODUCT_NAME = Test Project.app
-@@ -149,7 +135,6 @@ Build settings for action build and target "Test Project":
+@@ -149,7 +142,6 @@ Build settings for action build and target "Test Project":
      GCC_PFE_FILE_C_DIALECTS = c objective-c c++ objective-c++
      GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 
      GCC_SYMBOLS_PRIVATE_EXTERN = NO
@@ -572,7 +599,7 @@ index d208142..8adf882 100644
      GCC_TREAT_WARNINGS_AS_ERRORS = NO
      GCC_VERSION = com.apple.compilers.llvm.clang.1_0
      GCC_VERSION_IDENTIFIER = com_apple_compilers_llvm_clang_1_0
-@@ -176,10 +161,10 @@ Build settings for action build and target "Test Project":
+@@ -176,10 +168,10 @@ Build settings for action build and target "Test Project":
      ICONV = /usr/bin/iconv
      INFOPLIST_EXPAND_BUILD_SETTINGS = YES
      INFOPLIST_FILE = Test Project/Info.plist
@@ -586,7 +613,7 @@ index d208142..8adf882 100644
      INLINE_PRIVATE_FRAMEWORKS = NO
      INSTALLHDRS_COPY_PHASE = NO
      INSTALLHDRS_SCRIPT_PHASE = NO
-@@ -189,13 +174,12 @@ Build settings for action build and target "Test Project":
+@@ -189,13 +181,12 @@ Build settings for action build and target "Test Project":
      INSTALL_OWNER = VERSION_INFO_BUILDER
      INSTALL_PATH = /Applications
      INSTALL_ROOT = /tmp/Test Project.dst
@@ -601,7 +628,7 @@ index d208142..8adf882 100644
      JAVA_FRAMEWORK_RESOURCES_DIRS = Resources
      JAVA_JAR_FLAGS = cv
      JAVA_SOURCE_SUBDIR = .
-@@ -203,9 +187,9 @@ Build settings for action build and target "Test Project":
+@@ -203,9 +194,9 @@ Build settings for action build and target "Test Project":
      JAVA_ZIP_FLAGS = -urg
      JIKES_DEFAULT_FLAGS = +E +OLDCSO
      KEEP_PRIVATE_EXTERNS = NO
@@ -613,7 +640,7 @@ index d208142..8adf882 100644
      LD_NO_PIE = NO
      LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES
      LD_RUNPATH_SEARCH_PATHS =  @executable_path/Frameworks
-@@ -215,10 +199,10 @@ Build settings for action build and target "Test Project":
+@@ -215,10 +206,10 @@ Build settings for action build and target "Test Project":
      LIBRARY_FLAG_PREFIX = -l
      LIBRARY_KEXT_INSTALL_PATH = /Library/Extensions
      LINKER_DISPLAYS_MANGLED_NAMES = NO
@@ -626,15 +653,13 @@ index d208142..8adf882 100644
      LOCAL_ADMIN_APPS_DIR = /Applications/Utilities
      LOCAL_APPS_DIR = /Applications
      LOCAL_DEVELOPER_DIR = /Library/Developer
-@@ -226,21 +210,22 @@ Build settings for action build and target "Test Project":
-     LOCROOT = 
+@@ -227,20 +218,20 @@ Build settings for action build and target "Test Project":
      LOCSYMROOT = 
      MACH_O_TYPE = mh_execute
-+    MACOSX_DEPLOYMENT_TARGET = 10.12
      MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
-     MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
--    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
-+    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+-    MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
++    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
      MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
      METAL_LIBRARY_FILE_BASE = default
 -    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Other Configuration-iphoneos/Test Project.app
@@ -654,7 +679,7 @@ index d208142..8adf882 100644
      OBJROOT = OBJROOT
      ONLY_ACTIVE_ARCH = YES
      OS = MACOS
-@@ -249,27 +234,27 @@ Build settings for action build and target "Test Project":
+@@ -249,27 +240,27 @@ Build settings for action build and target "Test Project":
      PASCAL_STRINGS = YES
      PATH = PATH
      PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES = /usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks DEVELOPER_DIR/Headers DEVELOPER_DIR/SDKs DEVELOPER_DIR/Platforms
@@ -700,7 +725,7 @@ index d208142..8adf882 100644
      PRODUCT_BUNDLE_IDENTIFIER = com.tworingsoft.Test-Project
      PRODUCT_MODULE_NAME = Test_Project
      PRODUCT_NAME = Test Project
-@@ -283,50 +268,48 @@ Build settings for action build and target "Test Project":
+@@ -283,50 +274,40 @@ Build settings for action build and target "Test Project":
      PROJECT_NAME = Test Project
      PROJECT_TEMP_DIR = OBJROOT/Test Project.build
      PROJECT_TEMP_ROOT = OBJROOT
@@ -728,18 +753,10 @@ index d208142..8adf882 100644
 -    SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    SDK_VERSION = 10.2
 -    SDK_VERSION_ACTUAL = SDK_VERSION_ACTUAL
-+    SCRIPTS_FOLDER_PATH = Test Project.app/Contents/Resources/Scripts
-+    SDKROOT = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-+    SDK_DIR = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-+    SDK_DIR_macosx10_12 = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-+    SDK_NAME = macosx10.12
-+    SDK_NAMES = macosx10.12
-+    SDK_PRODUCT_BUILD_VERSION = 16E185
-+    SDK_VERSION = 10.12
-+    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
-     SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+-    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
 -    SDK_VERSION_MINOR = 200
-+    SDK_VERSION_MINOR = 1200
++    SCRIPTS_FOLDER_PATH = Test Project.app/Contents/Resources/Scripts
++    SDKROOT = SRCROOT/macosx10.12
      SED = /usr/bin/sed
      SEPARATE_STRIP = NO
      SEPARATE_SYMBOL_EDIT = NO
@@ -766,6 +783,7 @@ index d208142..8adf882 100644
      STRIP_STYLE = all
 -    SUPPORTED_DEVICE_FAMILIES = 1,2
 -    SUPPORTED_PLATFORMS = iphonesimulator iphoneos
++    STRIP_SWIFT_SYMBOLS = YES
 +    SUPPORTED_PLATFORMS = macosx
      SUPPORTS_TEXT_BASED_API = NO
 -    SWIFT_PLATFORM_TARGET_PREFIX = ios
@@ -773,7 +791,7 @@ index d208142..8adf882 100644
      SYMROOT = SYMROOT
      SYSTEM_ADMIN_APPS_DIR = /Applications/Utilities
      SYSTEM_APPS_DIR = /Applications
-@@ -352,17 +335,17 @@ Build settings for action build and target "Test Project":
+@@ -352,17 +333,17 @@ Build settings for action build and target "Test Project":
      TAPI_VERIFY_MODE = ErrorsOnly
      TARGETED_DEVICE_FAMILY = 1,2
      TARGETNAME = Test Project
@@ -797,7 +815,7 @@ index d208142..8adf882 100644
      UNSTRIPPED_PRODUCT = NO
      USER = VERSION_INFO_BUILDER
      USER_APPS_DIR = USER_APPS_DIR
-@@ -371,9 +354,9 @@ Build settings for action build and target "Test Project":
+@@ -371,9 +352,9 @@ Build settings for action build and target "Test Project":
      USE_HEADERMAP = YES
      USE_HEADER_SYMLINKS = NO
      VALIDATE_PRODUCT = NO
@@ -809,7 +827,7 @@ index d208142..8adf882 100644
      VERSION_INFO_BUILDER = VERSION_INFO_BUILDER
      VERSION_INFO_FILE = Test Project_vers.c
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
-@@ -386,8 +369,8 @@ Build settings for action build and target "Test Project":
+@@ -386,8 +367,8 @@ Build settings for action build and target "Test Project":
      XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
      XCODE_VERSION_MAJOR = XCODE_VERSION_MAJOR
      XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
@@ -821,7 +839,7 @@ index d208142..8adf882 100644
      variant = normal
  
 diff --git a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock
-index b12bc44..9fb1663 100644
+index b12bc44..e5f6245 100644
 --- a/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
 +++ b/test/Test Project/.xcbs/Release/Test Project.build-settings.lock	
 @@ -1,6 +1,5 @@
@@ -860,7 +878,25 @@ index b12bc44..9fb1663 100644
      CACHE_ROOT = CCHROOT
      CCHROOT = CCHROOT
      CHMOD = /bin/chmod
-@@ -52,50 +50,41 @@ Build settings for action build and target "Test Project":
+@@ -40,7 +38,9 @@ Build settings for action build and target "Test Project":
+     CLANG_CXX_LIBRARY = libc++
+     CLANG_ENABLE_MODULES = YES
+     CLANG_ENABLE_OBJC_ARC = YES
++    CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
+     CLANG_WARN_BOOL_CONVERSION = YES
++    CLANG_WARN_COMMA = YES
+     CLANG_WARN_CONSTANT_CONVERSION = YES
+     CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
+     CLANG_WARN_DOCUMENTATION_COMMENTS = YES
+@@ -48,39 +48,37 @@ Build settings for action build and target "Test Project":
+     CLANG_WARN_ENUM_CONVERSION = YES
+     CLANG_WARN_INFINITE_RECURSION = YES
+     CLANG_WARN_INT_CONVERSION = YES
++    CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES
++    CLANG_WARN_OBJC_LITERAL_CONVERSION = YES
+     CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
++    CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
++    CLANG_WARN_STRICT_PROTOTYPES = YES
      CLANG_WARN_SUSPICIOUS_MOVE = YES
      CLANG_WARN_UNREACHABLE_CODE = YES
      CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
@@ -876,6 +912,7 @@ index b12bc44..9fb1663 100644
 -    CODE_SIGN_IDENTITY = iPhone Developer
      COLOR_DIAGNOSTICS = NO
      COMBINE_HIDPI_IMAGES = NO
++    COMPILER_INDEX_STORE_ENABLE = Default
      COMPOSITE_SDK_DIRS = OBJROOT/CompositeSDKs
 -    COMPRESS_PNG_FILES = YES
 +    COMPRESS_PNG_FILES = NO
@@ -904,8 +941,7 @@ index b12bc44..9fb1663 100644
      DEBUGGING_SYMBOLS = YES
      DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
      DEFAULT_COMPILER = com.apple.compilers.llvm.clang.1_0
--    DEFAULT_KEXT_INSTALL_PATH = /System/Library/Extensions
-+    DEFAULT_KEXT_INSTALL_PATH = /Library/Extensions
+@@ -88,14 +86,12 @@ Build settings for action build and target "Test Project":
      DEFINES_MODULE = NO
      DEPLOYMENT_LOCATION = NO
      DEPLOYMENT_POSTPROCESSING = NO
@@ -926,7 +962,7 @@ index b12bc44..9fb1663 100644
      DEVELOPER_APPLICATIONS_DIR = DEVELOPER_DIR/Applications
      DEVELOPER_BIN_DIR = DEVELOPER_DIR/usr/bin
      DEVELOPER_DIR = DEVELOPER_DIR
-@@ -106,48 +95,45 @@ Build settings for action build and target "Test Project":
+@@ -106,48 +102,45 @@ Build settings for action build and target "Test Project":
      DEVELOPER_TOOLS_DIR = DEVELOPER_DIR/Tools
      DEVELOPER_USR_DIR = DEVELOPER_DIR/usr
      DEVELOPMENT_LANGUAGE = English
@@ -987,7 +1023,7 @@ index b12bc44..9fb1663 100644
      GCC_TREAT_WARNINGS_AS_ERRORS = NO
      GCC_VERSION = com.apple.compilers.llvm.clang.1_0
      GCC_VERSION_IDENTIFIER = com_apple_compilers_llvm_clang_1_0
-@@ -174,10 +160,10 @@ Build settings for action build and target "Test Project":
+@@ -174,10 +167,10 @@ Build settings for action build and target "Test Project":
      ICONV = /usr/bin/iconv
      INFOPLIST_EXPAND_BUILD_SETTINGS = YES
      INFOPLIST_FILE = Test Project/Info.plist
@@ -1001,7 +1037,7 @@ index b12bc44..9fb1663 100644
      INLINE_PRIVATE_FRAMEWORKS = NO
      INSTALLHDRS_COPY_PHASE = NO
      INSTALLHDRS_SCRIPT_PHASE = NO
-@@ -187,13 +173,12 @@ Build settings for action build and target "Test Project":
+@@ -187,13 +180,12 @@ Build settings for action build and target "Test Project":
      INSTALL_OWNER = VERSION_INFO_BUILDER
      INSTALL_PATH = /Applications
      INSTALL_ROOT = /tmp/Test Project.dst
@@ -1016,7 +1052,7 @@ index b12bc44..9fb1663 100644
      JAVA_FRAMEWORK_RESOURCES_DIRS = Resources
      JAVA_JAR_FLAGS = cv
      JAVA_SOURCE_SUBDIR = .
-@@ -201,9 +186,9 @@ Build settings for action build and target "Test Project":
+@@ -201,9 +193,9 @@ Build settings for action build and target "Test Project":
      JAVA_ZIP_FLAGS = -urg
      JIKES_DEFAULT_FLAGS = +E +OLDCSO
      KEEP_PRIVATE_EXTERNS = NO
@@ -1028,7 +1064,7 @@ index b12bc44..9fb1663 100644
      LD_NO_PIE = NO
      LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES
      LD_RUNPATH_SEARCH_PATHS =  @executable_path/Frameworks
-@@ -213,11 +198,10 @@ Build settings for action build and target "Test Project":
+@@ -213,11 +205,10 @@ Build settings for action build and target "Test Project":
      LIBRARY_FLAG_PREFIX = -l
      LIBRARY_KEXT_INSTALL_PATH = /Library/Extensions
      LINKER_DISPLAYS_MANGLED_NAMES = NO
@@ -1042,15 +1078,13 @@ index b12bc44..9fb1663 100644
      LOCAL_ADMIN_APPS_DIR = /Applications/Utilities
      LOCAL_APPS_DIR = /Applications
      LOCAL_DEVELOPER_DIR = /Library/Developer
-@@ -225,21 +209,22 @@ Build settings for action build and target "Test Project":
-     LOCROOT = 
+@@ -226,20 +217,20 @@ Build settings for action build and target "Test Project":
      LOCSYMROOT = 
      MACH_O_TYPE = mh_execute
-+    MACOSX_DEPLOYMENT_TARGET = 10.12
      MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
-     MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
--    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
-+    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+-    MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
++    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
      MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
      METAL_LIBRARY_FILE_BASE = default
 -    METAL_LIBRARY_OUTPUT_DIR = SYMROOT/Release-iphoneos/Test Project.app
@@ -1070,7 +1104,7 @@ index b12bc44..9fb1663 100644
      OBJROOT = OBJROOT
      ONLY_ACTIVE_ARCH = NO
      OS = MACOS
-@@ -248,27 +233,27 @@ Build settings for action build and target "Test Project":
+@@ -248,27 +239,27 @@ Build settings for action build and target "Test Project":
      PASCAL_STRINGS = YES
      PATH = PATH
      PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES = /usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks DEVELOPER_DIR/Headers DEVELOPER_DIR/SDKs DEVELOPER_DIR/Platforms
@@ -1116,7 +1150,7 @@ index b12bc44..9fb1663 100644
      PRODUCT_BUNDLE_IDENTIFIER = com.tworingsoft.Test-Project
      PRODUCT_MODULE_NAME = Test_Project
      PRODUCT_NAME = Test Project
-@@ -282,50 +267,48 @@ Build settings for action build and target "Test Project":
+@@ -282,50 +273,40 @@ Build settings for action build and target "Test Project":
      PROJECT_NAME = Test Project
      PROJECT_TEMP_DIR = OBJROOT/Test Project.build
      PROJECT_TEMP_ROOT = OBJROOT
@@ -1144,18 +1178,10 @@ index b12bc44..9fb1663 100644
 -    SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
 -    SDK_VERSION = 10.2
 -    SDK_VERSION_ACTUAL = SDK_VERSION_ACTUAL
-+    SCRIPTS_FOLDER_PATH = Test Project.app/Contents/Resources/Scripts
-+    SDKROOT = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-+    SDK_DIR = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-+    SDK_DIR_macosx10_12 = DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-+    SDK_NAME = macosx10.12
-+    SDK_NAMES = macosx10.12
-+    SDK_PRODUCT_BUILD_VERSION = 16E185
-+    SDK_VERSION = 10.12
-+    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
-     SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
+-    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
 -    SDK_VERSION_MINOR = 200
-+    SDK_VERSION_MINOR = 1200
++    SCRIPTS_FOLDER_PATH = Test Project.app/Contents/Resources/Scripts
++    SDKROOT = SRCROOT/macosx10.12
      SED = /usr/bin/sed
      SEPARATE_STRIP = NO
      SEPARATE_SYMBOL_EDIT = NO
@@ -1182,6 +1208,7 @@ index b12bc44..9fb1663 100644
      STRIP_STYLE = all
 -    SUPPORTED_DEVICE_FAMILIES = 1,2
 -    SUPPORTED_PLATFORMS = iphonesimulator iphoneos
++    STRIP_SWIFT_SYMBOLS = YES
 +    SUPPORTED_PLATFORMS = macosx
      SUPPORTS_TEXT_BASED_API = NO
 -    SWIFT_PLATFORM_TARGET_PREFIX = ios
@@ -1189,7 +1216,7 @@ index b12bc44..9fb1663 100644
      SYMROOT = SYMROOT
      SYSTEM_ADMIN_APPS_DIR = /Applications/Utilities
      SYSTEM_APPS_DIR = /Applications
-@@ -351,17 +334,17 @@ Build settings for action build and target "Test Project":
+@@ -351,17 +332,17 @@ Build settings for action build and target "Test Project":
      TAPI_VERIFY_MODE = ErrorsOnly
      TARGETED_DEVICE_FAMILY = 1,2
      TARGETNAME = Test Project
@@ -1213,7 +1240,7 @@ index b12bc44..9fb1663 100644
      UNSTRIPPED_PRODUCT = NO
      USER = VERSION_INFO_BUILDER
      USER_APPS_DIR = USER_APPS_DIR
-@@ -370,9 +353,9 @@ Build settings for action build and target "Test Project":
+@@ -370,9 +351,9 @@ Build settings for action build and target "Test Project":
      USE_HEADERMAP = YES
      USE_HEADER_SYMLINKS = NO
      VALIDATE_PRODUCT = YES
@@ -1225,7 +1252,7 @@ index b12bc44..9fb1663 100644
      VERSION_INFO_BUILDER = VERSION_INFO_BUILDER
      VERSION_INFO_FILE = Test Project_vers.c
      VERSION_INFO_STRING = "@(#)PROGRAM:Test Project  PROJECT:Test Project-"
-@@ -385,8 +368,8 @@ Build settings for action build and target "Test Project":
+@@ -385,8 +366,8 @@ Build settings for action build and target "Test Project":
      XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
      XCODE_VERSION_MAJOR = XCODE_VERSION_MAJOR
      XCODE_VERSION_MINOR = XCODE_VERSION_MINOR
