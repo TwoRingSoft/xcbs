@@ -14,12 +14,12 @@ Build settings for action build and target "Test Project":
     APPLE_INTERNAL_TOOLS = /AppleInternal/Developer/Tools
     APPLICATION_EXTENSION_API_ONLY = NO
     APPLY_RULES_IN_COPY_FILES = NO
-    ARCHS = armv7 arm64
-    ARCHS_STANDARD = armv7 arm64
+    ARCHS = arm64
+    ARCHS_STANDARD = arm64
     ARCHS_STANDARD_32_64_BIT = armv7 arm64
     ARCHS_STANDARD_32_BIT = armv7
     ARCHS_STANDARD_64_BIT = arm64
-    ARCHS_STANDARD_INCLUDING_64_BIT = armv7 arm64
+    ARCHS_STANDARD_INCLUDING_64_BIT = arm64
     ARCHS_UNIVERSAL_IPHONE_OS = armv7 arm64
     ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
     AVAILABLE_PLATFORMS = appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator
@@ -40,7 +40,9 @@ Build settings for action build and target "Test Project":
     CLANG_CXX_LIBRARY = libc++
     CLANG_ENABLE_MODULES = YES
     CLANG_ENABLE_OBJC_ARC = YES
+    CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
     CLANG_WARN_BOOL_CONVERSION = YES
+    CLANG_WARN_COMMA = YES
     CLANG_WARN_CONSTANT_CONVERSION = YES
     CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
     CLANG_WARN_DOCUMENTATION_COMMENTS = YES
@@ -48,7 +50,11 @@ Build settings for action build and target "Test Project":
     CLANG_WARN_ENUM_CONVERSION = YES
     CLANG_WARN_INFINITE_RECURSION = YES
     CLANG_WARN_INT_CONVERSION = YES
+    CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES
+    CLANG_WARN_OBJC_LITERAL_CONVERSION = YES
     CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
+    CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
+    CLANG_WARN_STRICT_PROTOTYPES = YES
     CLANG_WARN_SUSPICIOUS_MOVE = YES
     CLANG_WARN_UNREACHABLE_CODE = YES
     CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
@@ -62,6 +68,7 @@ Build settings for action build and target "Test Project":
     CODE_SIGN_IDENTITY = iPhone Developer
     COLOR_DIAGNOSTICS = NO
     COMBINE_HIDPI_IMAGES = NO
+    COMPILER_INDEX_STORE_ENABLE = Default
     COMPOSITE_SDK_DIRS = OBJROOT/CompositeSDKs
     COMPRESS_PNG_FILES = YES
     CONFIGURATION = Release
@@ -74,8 +81,8 @@ Build settings for action build and target "Test Project":
     COPY_RESOURCES_FROM_STATIC_FRAMEWORKS = YES
     CORRESPONDING_SIMULATOR_PLATFORM_DIR = DEVELOPER_DIR/Platforms/iPhoneSimulator.platform
     CORRESPONDING_SIMULATOR_PLATFORM_NAME = iphonesimulator
-    CORRESPONDING_SIMULATOR_SDK_DIR = DEVELOPER_DIR/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk
-    CORRESPONDING_SIMULATOR_SDK_NAME = iphonesimulator10.2
+    CORRESPONDING_SIMULATOR_SDK_DIR = DEVELOPER_DIR/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk
+    CORRESPONDING_SIMULATOR_SDK_NAME = iphonesimulator11.1
     CP = /bin/cp
     CREATE_INFOPLIST_SECTION_IN_BINARY = NO
     CURRENT_ARCH = arm64
@@ -92,7 +99,7 @@ Build settings for action build and target "Test Project":
     DEPLOYMENT_TARGET_CLANG_FLAG_NAME = miphoneos-version-min
     DEPLOYMENT_TARGET_CLANG_FLAG_PREFIX = -miphoneos-version-min=
     DEPLOYMENT_TARGET_SETTING_NAME = IPHONEOS_DEPLOYMENT_TARGET
-    DEPLOYMENT_TARGET_SUGGESTED_VALUES = 8.0 8.1 8.2 8.3 8.4 9.0 9.1 9.2 9.3 10.0 10.1 10.2
+    DEPLOYMENT_TARGET_SUGGESTED_VALUES = 8.0 8.1 8.2 8.3 8.4 9.0 9.1 9.2 9.3 10.0 10.1 10.2 10.3 11.0 11.1
     DERIVED_FILES_DIR = OBJROOT/Test Project.build/Release-iphoneos/Test Project.build/DerivedSources
     DERIVED_FILE_DIR = OBJROOT/Test Project.build/Release-iphoneos/Test Project.build/DerivedSources
     DERIVED_SOURCES_DIR = OBJROOT/Test Project.build/Release-iphoneos/Test Project.build/DerivedSources
@@ -187,7 +194,7 @@ Build settings for action build and target "Test Project":
     INSTALL_OWNER = VERSION_INFO_BUILDER
     INSTALL_PATH = /Applications
     INSTALL_ROOT = /tmp/Test Project.dst
-    IPHONEOS_DEPLOYMENT_TARGET = 10.2
+    IPHONEOS_DEPLOYMENT_TARGET = 11.1
     JAVAC_DEFAULT_FLAGS = -J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8
     JAVA_APP_STUB = /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub
     JAVA_ARCHIVE_CLASSES = YES
@@ -200,6 +207,7 @@ Build settings for action build and target "Test Project":
     JAVA_USE_DEPENDENCIES = YES
     JAVA_ZIP_FLAGS = -urg
     JIKES_DEFAULT_FLAGS = +E +OLDCSO
+    KASAN_DEFAULT_CFLAGS = -DKASAN=1 -fsanitize=address -mllvm -asan-globals-live-support -mllvm -asan-force-dynamic-shadow
     KEEP_PRIVATE_EXTERNS = NO
     LD_DEPENDENCY_INFO_FILE = OBJROOT/Test Project.build/Release-iphoneos/Test Project.build/Objects-normal/arm64/Test Project_dependency_info.dat
     LD_GENERATE_MAP_FILE = NO
@@ -214,7 +222,6 @@ Build settings for action build and target "Test Project":
     LIBRARY_KEXT_INSTALL_PATH = /Library/Extensions
     LINKER_DISPLAYS_MANGLED_NAMES = NO
     LINK_FILE_LIST_normal_arm64 = 
-    LINK_FILE_LIST_normal_armv7 = 
     LINK_WITH_STANDARD_LIBRARIES = YES
     LOCALIZABLE_CONTENT_DIR = 
     LOCALIZED_RESOURCES_FOLDER_PATH = Test Project.app/English.lproj
@@ -226,7 +233,7 @@ Build settings for action build and target "Test Project":
     LOCSYMROOT = 
     MACH_O_TYPE = mh_execute
     MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
-    MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
+    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
     MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
     METAL_LIBRARY_FILE_BASE = default
@@ -295,16 +302,16 @@ Build settings for action build and target "Test Project":
     REZ_OBJECTS_DIR = OBJROOT/Test Project.build/Release-iphoneos/Test Project.build/ResourceManagerResources/Objects
     SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO
     SCRIPTS_FOLDER_PATH = Test Project.app/Scripts
-    SDKROOT = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk
-    SDK_DIR = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk
-    SDK_DIR_iphoneos10_2 = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk
-    SDK_NAME = iphoneos10.2
-    SDK_NAMES = iphoneos10.2
+    SDKROOT = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk
+    SDK_DIR = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk
+    SDK_DIR_iphoneos11_1 = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk
+    SDK_NAME = iphoneos11.1
+    SDK_NAMES = iphoneos11.1
     SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
-    SDK_VERSION = 10.2
-    SDK_VERSION_ACTUAL = SDK_VERSION_ACTUAL
-    SDK_VERSION_MAJOR = SDK_VERSION_MAJOR
-    SDK_VERSION_MINOR = 200
+    SDK_VERSION = 11.1
+    SDK_VERSION_ACTUAL = 110100
+    SDK_VERSION_MAJOR = 110000
+    SDK_VERSION_MINOR = 100
     SED = /usr/bin/sed
     SEPARATE_STRIP = NO
     SEPARATE_SYMBOL_EDIT = NO
@@ -322,6 +329,7 @@ Build settings for action build and target "Test Project":
     STRIP_BITCODE_FROM_COPIED_FILES = YES
     STRIP_INSTALLED_PRODUCT = YES
     STRIP_STYLE = all
+    STRIP_SWIFT_SYMBOLS = YES
     SUPPORTED_DEVICE_FAMILIES = 1,2
     SUPPORTED_PLATFORMS = iphonesimulator iphoneos
     SUPPORTS_TEXT_BASED_API = NO
