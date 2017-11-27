@@ -1,4 +1,4 @@
-# `xcbs` [![Build Status](https://travis-ci.org/TwoRingSoft/xcbs.svg?branch=xcode-9)] (https://travis-ci.org/TwoRingSoft/xcbs)
+# `xcbs` [![Build Status](https://travis-ci.org/TwoRingSoft/xcbs.svg?branch=xcode-9)](https://travis-ci.org/TwoRingSoft/xcbs)
 
 Perform more rigoruous checks on how your Xcode project is changing.
 
