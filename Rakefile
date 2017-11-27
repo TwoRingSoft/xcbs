@@ -1,5 +1,5 @@
 task :test do
-	sh 'test/test.sh'
+	sh 'bash test/test.sh'
 end
 
 task :review_baseline_deltas do
