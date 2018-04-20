@@ -2,6 +2,10 @@ task :test do
 	sh 'bash test/test.sh'
 end
 
+task :output_current_settings do
+  sh 'scripts/xcbs test/Test\ Project/Test\ Project.xcodeproj'
+end
+
 task :review_baseline_deltas do
   sh 'ksdiff test/baseline.diff test/computed.diff'
 end

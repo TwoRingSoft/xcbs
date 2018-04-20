@@ -8,6 +8,16 @@ For now there's a single test. Execute `test.sh` to run it.
 - `Test.xcconfig` was added to set `SDKROOT = iphoneos`, the same as the value set in Xcode's Build Settings GUI. The xcconfig was wired up for project-level settings and the `SDKROOT` setting was cleared for those settings in the GUI.
 - `xcbs` was run to obtain the settings lock files for the project in its initial state, which are checked in to source control
 
+### Xcode releases
+
+Each Xcode release introduces changes to its default project settings. Perform these steps before running the tests to work with a new Xcode release, before making other changes to xcbs code.
+
+- open `test/Test\ Project/Test\ Project.xcodeproj` and accept all project migrations
+- `rake output_current_settings`
+- commit the changes
+
+### Running and evaluating tests
+
 Running `test/test.sh` (`rake test`):
 
 - in `Test.xcconfig`, `SDKROOT` value is changed from `iphoneos` to `macosx10.12`
