@@ -1,10 +1,10 @@
 # Testing
 
-For now there's a single test. Execute `test.sh` to run it. It currently uses the Xcode 8.2 build chain.
+For now there's a single test. Execute `test.sh` to run it.
 
 ## Details
 
-- `Test Project.xcodeproj` was created using Xcode's (8.2.1) default project template
+- `Test Project.xcodeproj` was created using Xcode's default project template
 - `Test.xcconfig` was added to set `SDKROOT = iphoneos`, the same as the value set in Xcode's Build Settings GUI. The xcconfig was wired up for project-level settings and the `SDKROOT` setting was cleared for those settings in the GUI.
 - `xcbs` was run to obtain the settings lock files for the project in its initial state, which are checked in to source control
 
