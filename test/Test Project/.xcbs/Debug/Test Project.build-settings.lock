@@ -44,6 +44,7 @@ Build settings for action build and target "Test Project":
     CLANG_WARN_BOOL_CONVERSION = YES
     CLANG_WARN_COMMA = YES
     CLANG_WARN_CONSTANT_CONVERSION = YES
+    CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES
     CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
     CLANG_WARN_DOCUMENTATION_COMMENTS = YES
     CLANG_WARN_EMPTY_BODY = YES
@@ -51,6 +52,7 @@ Build settings for action build and target "Test Project":
     CLANG_WARN_INFINITE_RECURSION = YES
     CLANG_WARN_INT_CONVERSION = YES
     CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES
+    CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES
     CLANG_WARN_OBJC_LITERAL_CONVERSION = YES
     CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
     CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
@@ -66,6 +68,7 @@ Build settings for action build and target "Test Project":
     CODE_SIGNING_REQUIRED = YES
     CODE_SIGN_CONTEXT_CLASS = XCiPhoneOSCodeSignContext
     CODE_SIGN_IDENTITY = iPhone Developer
+    CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES
     COLOR_DIAGNOSTICS = NO
     COMBINE_HIDPI_IMAGES = NO
     COMPILER_INDEX_STORE_ENABLE = Default
@@ -81,8 +84,8 @@ Build settings for action build and target "Test Project":
     COPY_RESOURCES_FROM_STATIC_FRAMEWORKS = YES
     CORRESPONDING_SIMULATOR_PLATFORM_DIR = DEVELOPER_DIR/Platforms/iPhoneSimulator.platform
     CORRESPONDING_SIMULATOR_PLATFORM_NAME = iphonesimulator
-    CORRESPONDING_SIMULATOR_SDK_DIR = DEVELOPER_DIR/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk
-    CORRESPONDING_SIMULATOR_SDK_NAME = iphonesimulator11.1
+    CORRESPONDING_SIMULATOR_SDK_DIR = DEVELOPER_DIR/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk
+    CORRESPONDING_SIMULATOR_SDK_NAME = iphonesimulator11.3
     CP = /bin/cp
     CREATE_INFOPLIST_SECTION_IN_BINARY = NO
     CURRENT_ARCH = arm64
@@ -99,7 +102,7 @@ Build settings for action build and target "Test Project":
     DEPLOYMENT_TARGET_CLANG_FLAG_NAME = miphoneos-version-min
     DEPLOYMENT_TARGET_CLANG_FLAG_PREFIX = -miphoneos-version-min=
     DEPLOYMENT_TARGET_SETTING_NAME = IPHONEOS_DEPLOYMENT_TARGET
-    DEPLOYMENT_TARGET_SUGGESTED_VALUES = 8.0 8.1 8.2 8.3 8.4 9.0 9.1 9.2 9.3 10.0 10.1 10.2 10.3 11.0 11.1
+    DEPLOYMENT_TARGET_SUGGESTED_VALUES = 8.0 8.1 8.2 8.3 8.4 9.0 9.1 9.2 9.3 10.0 10.1 10.2 10.3 11.0 11.3
     DERIVED_FILES_DIR = OBJROOT/Test Project.build/Debug-iphoneos/Test Project.build/DerivedSources
     DERIVED_FILE_DIR = OBJROOT/Test Project.build/Debug-iphoneos/Test Project.build/DerivedSources
     DERIVED_SOURCES_DIR = OBJROOT/Test Project.build/Debug-iphoneos/Test Project.build/DerivedSources
@@ -196,7 +199,7 @@ Build settings for action build and target "Test Project":
     INSTALL_OWNER = VERSION_INFO_BUILDER
     INSTALL_PATH = /Applications
     INSTALL_ROOT = /tmp/Test Project.dst
-    IPHONEOS_DEPLOYMENT_TARGET = 11.1
+    IPHONEOS_DEPLOYMENT_TARGET = 11.3
     JAVAC_DEFAULT_FLAGS = -J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8
     JAVA_APP_STUB = /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub
     JAVA_ARCHIVE_CLASSES = YES
@@ -227,6 +230,7 @@ Build settings for action build and target "Test Project":
     LINK_WITH_STANDARD_LIBRARIES = YES
     LOCALIZABLE_CONTENT_DIR = 
     LOCALIZED_RESOURCES_FOLDER_PATH = Test Project.app/English.lproj
+    LOCALIZED_STRING_MACRO_NAMES = NSLocalizedString CFLocalizedString
     LOCAL_ADMIN_APPS_DIR = /Applications/Utilities
     LOCAL_APPS_DIR = /Applications
     LOCAL_DEVELOPER_DIR = /Library/Developer
@@ -235,7 +239,7 @@ Build settings for action build and target "Test Project":
     LOCSYMROOT = 
     MACH_O_TYPE = mh_execute
     MAC_OS_X_PRODUCT_BUILD_VERSION = MAC_OS_X_PRODUCT_BUILD_VERSION
-    MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
+    MAC_OS_X_VERSION_ACTUAL = MAC_OS_X_VERSION_ACTUAL
     MAC_OS_X_VERSION_MAJOR = MAC_OS_X_VERSION_MAJOR
     MAC_OS_X_VERSION_MINOR = MAC_OS_X_VERSION_MINOR
     METAL_LIBRARY_FILE_BASE = default
@@ -304,16 +308,16 @@ Build settings for action build and target "Test Project":
     REZ_OBJECTS_DIR = OBJROOT/Test Project.build/Debug-iphoneos/Test Project.build/ResourceManagerResources/Objects
     SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO
     SCRIPTS_FOLDER_PATH = Test Project.app/Scripts
-    SDKROOT = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk
-    SDK_DIR = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk
-    SDK_DIR_iphoneos11_1 = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk
-    SDK_NAME = iphoneos11.1
-    SDK_NAMES = iphoneos11.1
+    SDKROOT = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk
+    SDK_DIR = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk
+    SDK_DIR_iphoneos11_3 = DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk
+    SDK_NAME = iphoneos11.3
+    SDK_NAMES = iphoneos11.3
     SDK_PRODUCT_BUILD_VERSION = PLATFORM_PRODUCT_BUILD_VERSION
-    SDK_VERSION = 11.1
-    SDK_VERSION_ACTUAL = 110100
+    SDK_VERSION = 11.3
+    SDK_VERSION_ACTUAL = 110300
     SDK_VERSION_MAJOR = 110000
-    SDK_VERSION_MINOR = 100
+    SDK_VERSION_MINOR = 300
     SED = /usr/bin/sed
     SEPARATE_STRIP = NO
     SEPARATE_SYMBOL_EDIT = NO
