@@ -12,6 +12,4 @@ end
 
 task :accept_baseline_deltas do
 	sh 'mv test/computed.diff test/baseline.diff'
-	sh 'git add test/baseline.diff'
-	sh 'git commit'
 end
